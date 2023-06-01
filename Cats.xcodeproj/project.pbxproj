@@ -16,6 +16,14 @@
 		F7E0CE342A284595004A4648 /* CatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0CE332A284595004A4648 /* CatsTests.swift */; };
 		F7E0CE3E2A284595004A4648 /* CatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0CE3D2A284595004A4648 /* CatsUITests.swift */; };
 		F7E0CE402A284595004A4648 /* CatsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0CE3F2A284595004A4648 /* CatsUITestsLaunchTests.swift */; };
+		F7E0CE4F2A284798004A4648 /* CatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0CE4D2A284797004A4648 /* CatTableViewCell.swift */; };
+		F7E0CE502A284798004A4648 /* CatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7E0CE4E2A284797004A4648 /* CatTableViewCell.xib */; };
+		F7E0CE532A2849BF004A4648 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F7E0CE522A2849BF004A4648 /* Alamofire */; };
+		F7E0CE562A284A16004A4648 /* CatResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0CE552A284A16004A4648 /* CatResponse.swift */; };
+		F7E0CE592A284B8E004A4648 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0CE582A284B8E004A4648 /* Cat.swift */; };
+		F7E0CE5C2A284C01004A4648 /* CatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0CE5B2A284C01004A4648 /* CatModel.swift */; };
+		F7E0CE602A284D8A004A4648 /* CatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0CE5F2A284D8A004A4648 /* CatPresenter.swift */; };
+		F7E0CE622A28502F004A4648 /* CatAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0CE612A28502F004A4648 /* CatAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,13 @@
 		F7E0CE392A284595004A4648 /* CatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E0CE3D2A284595004A4648 /* CatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsUITests.swift; sourceTree = "<group>"; };
 		F7E0CE3F2A284595004A4648 /* CatsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F7E0CE4D2A284797004A4648 /* CatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTableViewCell.swift; sourceTree = "<group>"; };
+		F7E0CE4E2A284797004A4648 /* CatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatTableViewCell.xib; sourceTree = "<group>"; };
+		F7E0CE552A284A16004A4648 /* CatResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatResponse.swift; sourceTree = "<group>"; };
+		F7E0CE582A284B8E004A4648 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		F7E0CE5B2A284C01004A4648 /* CatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatModel.swift; sourceTree = "<group>"; };
+		F7E0CE5F2A284D8A004A4648 /* CatPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPresenter.swift; sourceTree = "<group>"; };
+		F7E0CE612A28502F004A4648 /* CatAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E0CE532A2849BF004A4648 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +115,13 @@
 		F7E0CE1B2A284593004A4648 /* Cats */ = {
 			isa = PBXGroup;
 			children = (
+				F7E0CE5D2A284D4F004A4648 /* Classes */,
+				F7E0CE5A2A284BEB004A4648 /* Model */,
+				F7E0CE572A284B77004A4648 /* DTO */,
+				F7E0CE542A2849F8004A4648 /* Entity */,
+				F7E0CE4C2A2846C4004A4648 /* Cell */,
 				F7E0CE1C2A284593004A4648 /* AppDelegate.swift */,
 				F7E0CE1E2A284593004A4648 /* SceneDelegate.swift */,
-				F7E0CE202A284593004A4648 /* ViewController.swift */,
-				F7E0CE222A284593004A4648 /* Main.storyboard */,
 				F7E0CE252A284595004A4648 /* Assets.xcassets */,
 				F7E0CE272A284595004A4648 /* LaunchScreen.storyboard */,
 				F7E0CE2A2A284595004A4648 /* Info.plist */,
@@ -127,6 +146,58 @@
 			path = CatsUITests;
 			sourceTree = "<group>";
 		};
+		F7E0CE4C2A2846C4004A4648 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F7E0CE4D2A284797004A4648 /* CatTableViewCell.swift */,
+				F7E0CE4E2A284797004A4648 /* CatTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F7E0CE542A2849F8004A4648 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F7E0CE582A284B8E004A4648 /* Cat.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F7E0CE572A284B77004A4648 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				F7E0CE552A284A16004A4648 /* CatResponse.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		F7E0CE5A2A284BEB004A4648 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7E0CE5B2A284C01004A4648 /* CatModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7E0CE5D2A284D4F004A4648 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F7E0CE5E2A284D5C004A4648 /* List */,
+				F7E0CE222A284593004A4648 /* Main.storyboard */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F7E0CE5E2A284D5C004A4648 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				F7E0CE5F2A284D8A004A4648 /* CatPresenter.swift */,
+				F7E0CE612A28502F004A4648 /* CatAdapter.swift */,
+				F7E0CE202A284593004A4648 /* ViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +214,9 @@
 			dependencies = (
 			);
 			name = Cats;
+			packageProductDependencies = (
+				F7E0CE522A2849BF004A4648 /* Alamofire */,
+			);
 			productName = Cats;
 			productReference = F7E0CE192A284593004A4648 /* Cats.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +289,9 @@
 				Base,
 			);
 			mainGroup = F7E0CE102A284593004A4648;
+			packageReferences = (
+				F7E0CE512A2849BF004A4648 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F7E0CE1A2A284593004A4648 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E0CE502A284798004A4648 /* CatTableViewCell.xib in Resources */,
 				F7E0CE292A284595004A4648 /* LaunchScreen.storyboard in Resources */,
 				F7E0CE262A284595004A4648 /* Assets.xcassets in Resources */,
 				F7E0CE242A284593004A4648 /* Main.storyboard in Resources */,
@@ -258,9 +336,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E0CE4F2A284798004A4648 /* CatTableViewCell.swift in Sources */,
 				F7E0CE212A284593004A4648 /* ViewController.swift in Sources */,
+				F7E0CE622A28502F004A4648 /* CatAdapter.swift in Sources */,
+				F7E0CE592A284B8E004A4648 /* Cat.swift in Sources */,
+				F7E0CE562A284A16004A4648 /* CatResponse.swift in Sources */,
 				F7E0CE1D2A284593004A4648 /* AppDelegate.swift in Sources */,
+				F7E0CE602A284D8A004A4648 /* CatPresenter.swift in Sources */,
 				F7E0CE1F2A284593004A4648 /* SceneDelegate.swift in Sources */,
+				F7E0CE5C2A284C01004A4648 /* CatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +686,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F7E0CE512A2849BF004A4648 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F7E0CE522A2849BF004A4648 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7E0CE512A2849BF004A4648 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F7E0CE112A284593004A4648 /* Project object */;
 }
